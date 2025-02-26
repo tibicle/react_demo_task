@@ -1,0 +1,83 @@
+{
+  "name": "nurses-now-master-admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@fingerprintjs/fingerprintjs": "^4.2.2",
+    "@reduxjs/toolkit": "^2.2.2",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.91",
+    "@types/react": "^18.2.72",
+    "@types/react-dom": "^18.2.22",
+    "antd": "^5.15.4",
+    "axios": "^1.6.8",
+    "dayjs": "^1.11.10",
+    "device-detector-js": "^3.0.3",
+    "i18next": "^23.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.0",
+    "react-redux": "^9.1.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.70.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react-simple-maps": "^3.0.4",
+    "@types/redux-persist": "^4.3.1",
+    "env-cmd": "^10.1.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "37.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.2.5",
+    "typescript": "4.9.5"
+  },
+  "scripts": {
+    "start": "PORT=8103 env-cmd -f .env.development react-scripts start ",
+    "start:dev": "env-cmd -f .env.development react-scripts start ",
+    "start:stage": "PORT=8109 env-cmd -f .env.staging react-scripts start ",
+    "start:production": "env-cmd -f .env.production react-scripts start",
+    "start:local": "env-cmd -f .env.local react-scripts start",
+    "build": "env-cmd -f .env.development react-scripts build",
+    "build:stage": "env-cmd -f .env.staging react-scripts build",
+    "build:production": "env-cmd -f .env.production react-scripts build",
+    "build:local": "env-cmd -f .env.local react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
+    "format": "npx prettier src --check",
+    "format:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config .prettierrc"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

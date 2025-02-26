@@ -1,0 +1,38 @@
+// @import url('../fonts/vertopal.com_Fontspring-DEMO-P22Mackinac-Medium.ttf');
+// @import url('../fonts/vertopal.com_Fontspring-DEMO-P22Mackinac-Book.ttf');
+// @import url('../fonts/vertopal.com_Fontspring-DEMO-P22Mackinac-Bold.ttf');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'P22MackinacRegular';
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: 'P22Mackinacbold';
+  src: local("P22Mackinacbold")
+        url("../fonts/vertopal.com_Fontspring-DEMO-P22Mackinac-Bold.ttf") format("opentype");
+}
+
+.ant-btn{
+  font-family: 'P22MackinacMedium';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  color: $white;
+  border-radius: 50px;
+}
+
+.ant-switch{
+  background-color: $black !important;
+  &.ant-switch-checked{
+    background-color: $primary !important;
+  }
+}

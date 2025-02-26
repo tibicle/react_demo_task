@@ -1,0 +1,337 @@
+
+.select-plan-section{
+    background-color: $white;
+    border-radius: 16px;
+    border: 1.5px solid #E7E8EA;
+    padding: 24px;
+    .title{
+        font-family: "P22MackinacMedium";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 36px;
+        color: #0B1D2E;
+        margin-bottom: 16px;
+    }
+    .sales-title{
+        font-family: "P22MackinacRegular";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        color: $black;
+    }
+    .select-plan-card{
+        border: 1px solid #DDDDDD;
+        border-radius: 16px;
+        overflow: hidden;
+        .ant-card-body{
+            padding: 0;
+            .card-header{
+                padding: 16px;
+                background-color: #F6F6F6;
+                .card-title{
+                    font-family: "P22MackinacMedium";
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    color: $black;
+                    margin: 0;
+                }
+                .card-select{
+                    background-color: $white;
+                    border: 1px solid #E8E9EA;
+                    border-radius: 8px;
+                    color: $white;
+                    font-size: 14px;
+                    line-height: 24px;
+                    .ant-select-selector{
+                        padding: 2px 10px 0 !important;
+                    }
+                }
+            }
+        }
+    }
+    .card-list{
+        &.extra-card-list{
+            .ant-space{
+                .ant-space-item{
+                    border: 1px solid #DDDDDD;
+                    border-radius: 16px;
+                    margin-bottom: 10px;
+                    overflow: hidden;
+                    &:last-child{
+                        border-bottom: 1px solid #DDDDDD;
+                        margin-bottom: 0;
+                    }
+                } 
+            }
+        }
+        .ant-space{
+            column-gap: 0;
+            row-gap: 0;
+            .ant-space-item{
+                border-bottom: 1px solid #DDDDDD;
+                &:last-child{
+                    border-bottom: none;
+                }
+                .ant-card{
+                    padding: 16px;
+                    border-radius: 0;
+                    border: none;
+                    .ant-card-body{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        padding: 0;
+                        &::after{
+                            display: none;
+                        }
+                        &::before{
+                            display: none;
+                        }
+                        .ant-radio-wrapper{
+                            .ant-radio{
+                                align-self: flex-start;
+                            }
+                            span{
+                                display: flex;
+                                flex-direction: column;
+                                .plan-title{
+                                    font-family: "P22MackinacMedium";
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 19.2px;
+                                    color: $black;
+                                    margin-bottom: 4px;
+                                }
+                                .plan-sub-title{
+                                    font-family: 'P22MackinacRegular';
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    letter-spacing: -3%;
+                                    color: #606060;
+                                }
+                            }
+                        }
+                        .plan-yr{
+                            font-family: "Work Sans", serif;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 23.46px;
+                            letter-spacing: 0%;
+                            text-align: right;
+                            label{
+                                font-family: "Work Sans", serif;
+                                font-weight: 600;
+                                font-size: 24px;
+                                line-height: 28.15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-primary{
+        width: 172px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+    .ex-add-title{
+        font-family: 'P22MackinacMedium';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 36px;
+        color: $black;
+
+    }
+    .border{
+        width: 100%;
+        background-color: #E7E8EA;
+        height: 1px;
+        margin: 32px 0;
+    }
+    .payment-card{
+        width: 50%;
+        .payment-title{
+            font-family: 'P22MackinacMedium';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19.2px;
+            color: $black;
+        }
+        .payment-right{
+            font-family: "Work Sans", serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18.77px;
+            text-align: right;
+            color: $black;
+        }
+        .payment-border{
+            width: 100%;
+            background-color: #E7E8EA;
+            height: 1px;
+            margin: 16px 0;
+        }
+        .payment-plan{
+            span{
+                font-family: 'P22MackinacRegular';
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                color: $black;
+            }
+        }
+    }
+    .alert-box{
+        border: 1px solid #EDEEFC;
+        background-color: #FAFBFE;
+        padding: 12px;
+        width: 70%;
+        border-radius: 8px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 24px;
+        .info-icon{
+            margin-top: 5px;
+        }
+    }
+}
+.payment-method{
+    padding-top: 16px;
+    .payment-method-selected{
+        border: 1px solid #E7E8EA !important;
+        border-radius: 8px;
+    }
+    .ant-card{
+        border: none;
+        min-height: 52px;
+        .ant-card-body{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            &::after{
+                display: none;
+            }
+            &::before{
+                display: none;
+            }
+            .ant-radio-wrapper{
+                span{
+                    .payment-method-item{
+                        display: flex;
+                        align-items: center;
+                        .icon{
+                            display: flex;
+                            margin-right: 10px;
+                        }
+                        .payment-list{
+                            .payment{
+                                font-family: 'P22MackinacMedium';
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 14.4px;
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.add-card-btn{
+    border: 1px solid #0B1D2E;
+    color: #0B1D2E;
+    width: 172px;
+    height: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit-btn{
+    width: 75px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0B1D2E;
+    color: #0B1D2E;
+    span{
+        height: 32px;
+        display: flex;
+    }
+}
+.btn-surveys{
+    height: unset;
+    width: 132px;
+    margin-left: 8px;
+}
+
+.add-card-primary{
+    height: unset;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    color: $white;
+}
+
+.ant-modal{
+    .ant-modal-content{
+        border-radius: 24px;
+        padding: 24px;
+        .ant-modal-header{
+            .ant-modal-title{
+                font-family: 'P22MackinacMedium';
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+                color: $black;
+            }
+        }
+    }
+}
+
+.card-form-section{
+    .input-field{
+        margin-bottom: 24px;
+        .input-title{
+            font-family: 'P22MackinacMedium';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 36px;
+            color: $black;
+        }
+    }
+}
+
+.review-modal{
+    .ant-modal-content{
+        .ant-modal-body{
+            padding: 64px;
+            .payment-review-text{
+                font-family: 'P22MackinacRegular';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: $black;
+                margin: 0;
+            }
+            .got-btn{
+                height: unset;
+                width: 132px;
+                margin-left: 8px;
+                margin-top: 32px;
+            }
+        }
+    }
+}
