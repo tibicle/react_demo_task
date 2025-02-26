@@ -10,7 +10,7 @@ This is a React project template using TypeScript for type safety and better dev
 - [Scripts](#scripts)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-- [Video Demonstration](#Video Demonstration)
+- [Video Demonstration](#Video-Demonstration)
 - [License](#license)
 
 ## Installation
@@ -91,7 +91,8 @@ If you'd like to contribute to this project, please fork the repository, create 
 
 For more details, watch the video below:
 
-[![Watch the video](https://drive.google.com/file/d/1tlM5j65r6IIFfxUmbgo4Tp6tVRt1dfdX/view?usp=sharing)]
+[here](https://drive.google.com/file/d/1tlM5j65r6IIFfxUmbgo4Tp6tVRt1dfdX/view?usp=sharing).
+
 
 ## License
 
